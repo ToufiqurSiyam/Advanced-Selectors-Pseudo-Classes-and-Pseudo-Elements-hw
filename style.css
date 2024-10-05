@@ -1,0 +1,150 @@
+/* Global body styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #227f4a;
+    color: #C9D1D9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Center alignment and add space around the main content */
+center {
+    margin-bottom: 20px;
+}
+
+/* Styling for the main heading */
+h1 {
+    color: #58A6FF;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px #000;
+    text-align: center;
+}
+
+/* Text blocks styles */
+p {
+    line-height: 1.6;
+    text-align: justify;
+    margin: 20px 0;
+    background-color: #6483ae;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Attribute Selector - Links */
+a {
+    color: #8B949E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #1F6FEB;
+}
+
+/* List items styling */
+ul>li {
+    font-weight: bold;
+    margin: 5px 0;
+    list-style-type: none;
+}
+
+ul li::before {
+    content: "🌲 ";
+}
+
+ul li:hover {
+    color: #4F8CC9;
+}
+
+/* Images styling */
+img {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Second heading styling */
+h2 {
+    color: #79C0FF;
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+/* Special text styles for emphasis */
+p::first-letter {
+    font-size: 200%;
+    color: #FF7B72;
+    font-weight: bold;
+}
+
+/* Add hover effect on list items */
+ul li:hover {
+    color: #4F8CC9;
+    cursor: pointer;
+}
+
+/* Styling for sibling selector */
+h1+p {
+    background-color: #161B22;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #30363D;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for nth child */
+ul li:nth-child(3) {
+    background-color: #21262D;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Add subtle animations */
+a:hover {
+    transition: color 0.3s ease-in-out;
+}
+
+ul li:hover {
+    transition: color 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Specifically targeting the p with id="link" */
+#link {
+    background-color: bisque;
+    color: aqua;
+    font-size: 1.2em;
+    /* Slightly larger font size for emphasis */
+    text-align: center;
+    /* Center alignment */
+}
+
+/* Specifically targeting the a tag within the p#link */
+#link a#rl {
+    color: #FF7B72;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 2px 5px;
+    border: 1px solid transparent;
+    /* Adds space around the link */
+    border-radius: 3px;
+    /* Rounded corners */
+}
+
+/* Hover effect specifically for the a tag inside p#link */
+#link a#rl:hover {
+    color: rgb(48, 236, 48);
+    border-color: #FF7B72;
+    /* Adds border on hover */
+    background-color: #161B22;
+    /* Changes background on hover */
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+}
